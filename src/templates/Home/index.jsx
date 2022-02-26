@@ -8,7 +8,7 @@ import { Button } from '../../components/Button'
 import { TextInput } from '../../components/TextInput'
 
 
-const Home = () => {
+export const Home = () => {
   const [posts, setPosts] = useState([])
   const [allPosts, setAllPosts] = useState([])
   const [page, setPage] = useState(0)
@@ -27,7 +27,7 @@ const Home = () => {
 
   const handleLoadPosts = useCallback(async (page, postsPerPage) => {
     const postsAndPhotos = await loadPosts()
-    
+
     setPosts(postsAndPhotos.slice(page, postsPerPage))
     setAllPosts(postsAndPhotos)
   }, [])

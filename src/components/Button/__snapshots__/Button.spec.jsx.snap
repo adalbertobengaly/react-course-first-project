@@ -1,9 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Button /> should match snapshot 1`] = `
-<button
-  class="button"
->
-  Load more
-</button>
+<div>
+  <button
+    class="button"
+  >
+    Load more
+  </button>
+</div>
 `;
